@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Signup from './Components/Signup';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+      <div className="row">
+        <div className="col-md-4 offset-md-4">
+          <center>
+            <h1 className='fw-bolder text-muted'>Formik Form Validation</h1>
+            <h2>Using Yup & Formik</h2>
+          </center>
+          <Signup />
+        </div>
+      </div>
+      
     </div>
   );
 }
